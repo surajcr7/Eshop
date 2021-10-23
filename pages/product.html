@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>eshop | product</title>
+  <link href="../image/logo.jpg" rel="icon">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+  <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="../js/slider.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/product.js"></script>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body>
+    <a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
+    <!-- Navigation bar -->
+  <nav class="navbar navbar-default md--navbar">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-header" href="../index.html"><img src="../image/logo.jpg" width="30" height="30"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="together">
+          <div class="form-center">
+            <form class="navbar-form navbar-left md--form">
+              <div class="search-bar">
+                <span class="search-icon">
+                <i class="fa fa-search"></i>
+                <input type="text" class="search" placeholder="search">
+              </span>
+              </div>
+            </form>
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="fa fa-sort-down md--fa" aria-hidden="true"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Computer</a></li>
+                  <li><a href="#">Cosmetic</a></li>
+                  <li><a href="#">Kitchen</a></li>
+                  <!--<li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li> -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="navbarCollaps" class="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="fa fa-question-circle-o" aria-hidden="true"> </span> Help</a></li>
+            <li><a href="#"><span class="fa fa-user-circle-o" aria-hidden="true"> </span> Account</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+  <!-- products -->
+  <div class="container-fluid">
+    <div class="row product">
+      <div class="col-md-5">
+        <div class="col-sm-3 sub_img" id="sub_img" onclick="changeImage(event)">
+            <img src="../image/main watch.jpg" alt="" width="100%">
+            <img src="../image/2.jpg" alt="" width="100%">
+            <img src="../image/3.jpg" alt="" width="100%">
+        </div>
+        <div class="col-sm-9">
+          <img id="mainImage" src="../image/main watch.jpg" alt="" width="100%" data-toggle="magnify">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h4>Timex T49859 Intelligent Quartz Compass Tide Temperature Watch For Men </h4>
+        <ul>
+          <li>Indiglo Night-Light</li>
+          <li>Tide Tracker Counts Down to High or Low Tide</li>
+          <li>Digital Thermometer with Analog Display Measures Air and Water Temperature</li>
+          <li>Accurate Digital Compass with Analog Display</li>
+          <li>Adjustable Declination Angle for Accuracy</li>
+          <li>Water resistant to 330 feet(100 M)</li>
+        </ul>
+        <button class="share_btn-twitter"><i class="fa fa-twitter"></i> tweet </button>
+        <button class="share_btn-facebook"><i class="fa fa-facebook"></i> share </button>
+        <button class="share_btn-googleplus"><i class="fa fa-google-plus"></i> google + </button>
+        <p class="share-to-friend"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send to a friend</a></p>
+        <div class="quantity_buy">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" name="" placeholder=" Quantity">
+              <button class="increase-btn">+</button>
+              <button class="decrease-btn">-</button>
+            </div>
+            <div class="col-md-6">
+              <h4>Rs. 24,999</h4>
+              <button class="cart-btn"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 order-on-phone">
+        <h3><i class="fa fa-phone-square" aria-hidden="true"></i> Order on Phone</h3>
+        <p>Don't have a credit card or bank account? Don't worry. You can still order this item and have it delivered at your doorstep !</p>
+        <form>
+          <label>Full Name :</label>
+          <br>
+          <input type="text" name="fullname">
+          <br>
+          <label>Contact :</label>
+          <br>
+          <input type="text" name="lastname">
+          <br>
+          <label>Email Address :</label>
+          <br>
+          <input type="email" name="email">
+          <br>
+          <br>
+          <input type="submit" value="Send >>>" class="btn btn-success">
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <!-- Offers -->
+  <div class="container">
+    <h2><b><u>Related items</b></u></h2>
+    <div class="row">
+      <div class="col-md-2 column productbox two">
+        <img src="../image/i6.jpg">
+        <div class="producttitle">i6 watch</div>
+        <div class="productprice">
+          <div class="pull-right"><a href="pages/product.html" class="btn btn-sm" role="button">BUY</a></div>
+          <div class="pricetext">Rs. 1,299</div>
+        </div>
+      </div>
+      <div class="col-md-2 column productbox two">
+        <img src="../image/octane.jpg">
+        <div class="producttitle">Octane Watch</div>
+        <div class="productprice">
+          <div class="pull-right"><a href="pages/product.html" class="btn btn-sm" role="button">BUY</a></div>
+          <div class="pricetext">Rs 11,390</div>
+        </div>
+      </div>
+      <div class="col-md-2 column productbox two">
+        <img src="../image/bolano.jpg">
+        <div class="producttitle">Bolano watch</div>
+        <div class="productprice">
+          <div class="pull-right"><a href="pages/product.html" class="btn btn-sm" role="button">BUY</a></div>
+          <div class="pricetext">Rs. 1192</div>
+        </div>
+      </div>
+      <div class="col-md-2 column productbox two">
+        <img src="../image/titan.jpg">
+        <div class="producttitle">Titan 9002</div>
+        <div class="productprice">
+          <div class="pull-right"><a href="pages/product.html" class="btn btn-sm" role="button">BUY</a></div>
+          <div class="pricetext">Rs. 16,140</div>
+        </div>
+      </div>
+      <div class="col-md-2 column productbox two">
+        <img src="../image/refelx.jpg">
+        <div class="producttitle">Refelx smart</div>
+        <div class="productprice">
+          <div class="pull-right"><a href="pages/product.html" class="btn btn-sm" role="button">BUY</a></div>
+          <div class="pricetext">Rs. 3,790</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--footer-->
+  <footer class="bottom-footer">
+    <div class="container">
+      <div class="row">
+        <!-- row -->
+        <div class="col-lg-4 col-md-4">
+          <!-- widgets column left -->
+          <ul class="list-unstyled clear-margins">
+            <!-- widgets -->
+            <li class="widget-container widget_nav_menu">
+              <!-- widgets list -->
+              <h1 class="title-widget">Associated With: </h1>
+              <ul>
+                <li><a href="#">Amatya Store</a></li>
+                <li><a href="#">Adarsha</a></li>
+                <li><a href="#">KITE Nepal</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- widgets column left end -->
+        <div class="col-lg-4 col-md-4">
+          <!-- widgets column center -->
+          <ul class="list-unstyled clear-margins">
+            <!-- widgets -->
+            <li class="widget-container widget_recent_news">
+              <!-- widgets list -->
+              <h1 class="title-widget">Contact Detail </h1>
+              <div class="footerp">
+                <h2 class="title-median">KITE Nepal Technosis Pvt. Ltd.</h2>
+                <p><b>Email Id:</b> <a href="mailto:info@kitenepal.com">info@kitenepal.com</a></p>
+                <p><b>Helpline Numbers </b>
+                  <b>(8AM to 10PM):</b> +977 98XXXXXXXX </p>
+                <p><b>Phone Numbers : </b>+977 98XXXXXXXX, </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="social-icons">
+            <ul class="nomargin">
+              <ul class="social-network social-circle">
+                <li><a href="https:\\www.facebook.com\kitenepal" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https:\\www.twitter.com\kitenepal" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https:\\www.linkedin.com\kitenepal" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https:\\www.plus.google.com\kitenepal" target="_blank"" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--header-->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="copyright">
+            © 2017, KITE Nepal, All rights reserved
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="design">
+            <a target="_blank" href="http://www.kitenepal.com">Web Design & Development by KITE Nepal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
